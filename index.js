@@ -14,7 +14,7 @@ const showStar = (data) =>{
         const newFirstRate = +firstRate;
         const newSecondRate = +secondRate;
         
-        const ul = document.getElementById('star');
+        const ol = document.getElementById('star');
         const li = document.createElement('li');
         li.classList.add("star-color");
 
@@ -31,7 +31,7 @@ const showStar = (data) =>{
             span.innerHTML=`<i class="fas fa-star-half-alt"></i>`;
         }
         li.appendChild(span);
-        ul.appendChild(li);
+        ol.appendChild(li);
     });
 }
 
