@@ -16,14 +16,15 @@ const showStar = (data) =>{
         
         const ol = document.getElementById('star');
         const li = document.createElement('li');
-        li.classList.add("star-color");
 
         for(let i=1; i<= newFirstRate; i++){
             const span = document.createElement('span');
+            span.classList.add("star-color");
             span.innerHTML=`<i class="fas fa-star"></i>`;
             li.appendChild(span);
         }
         const span = document.createElement('span');
+        span.classList.add("star-color");
         if(newSecondRate >0 && newSecondRate <=5){
             span.innerHTML=`<i class="far fa-star"></i>`;
         }
